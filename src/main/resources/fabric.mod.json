@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "enhanced_copper_golems",
+  "version": "${version}",
+  "name": "Enhanced Copper Golems",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/enhanced_copper_golems/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.philipvk.enhanced_copper_golems.client.Enhanced_copper_golemsDataGenerator"
+    ],
+    "client": [
+      "com.philipvk.enhanced_copper_golems.client.Enhanced_copper_golemsClient"
+    ],
+    "main": [
+      "com.philipvk.enhanced_copper_golems.Enhanced_copper_golems"
+    ]
+  },
+  "mixins": [
+    "enhanced_copper_golems.mixins.json",
+    {
+      "config": "enhanced_copper_golems.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
