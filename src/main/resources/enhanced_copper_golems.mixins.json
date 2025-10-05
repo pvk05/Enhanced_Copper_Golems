@@ -4,8 +4,6 @@
   "package": "com.philipvk.enhanced_copper_golems.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "GolemMixin",
-    "MoveItemsTaskMixin"
   ],
   "injectors": {
     "defaultRequire": 1
